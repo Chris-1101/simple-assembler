@@ -14,12 +14,12 @@ void print_result(vector<string> instructions)
   {
     cout << i->first << ": " << i->second << endl;
   }
-  cout << std::endl;
+  cout << endl;
 }
 
 int main(void)
 {
-  print_result({ "mov a 5", "inc a", "dec a", "dec a", "jnz a -1", "inc a" });
+  print_result({ "mov a 5", "inc a", ";spanner", "dec a", "dec a", "jnz a -1", "inc a" });
   print_result({ "mov a -10", "mov b a", "inc a", "dec b", "jnz a -2" });
   print_result({ "mov d 100", "dec d", "mov b d", "jnz b -2", "inc d", "mov a d", "jnz 5 10", "mov c a" });
 
