@@ -29,6 +29,8 @@ std::map<std::string, int> assembler(std::vector<std::string> const& assembly)
   {
     std::vector<std::string> instruction = split(assembly[i]);
 
+    if (instruction[0][0] == ';') continue;
+
     if (instruction[0] == "mov") registers[instruction[1]] = get_val(instruction[2]);
     if (instruction[0] == "inc") registers[instruction[1]]++;
     if (instruction[0] == "dec") registers[instruction[1]]--;
