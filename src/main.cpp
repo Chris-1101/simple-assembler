@@ -19,9 +19,25 @@ void print_result(vector<string> instructions)
 
 int main(void)
 {
+  // Basic
   print_result({ "mov a 5", "inc a", ";spanner", "dec a", "dec a", "jnz a -1", "inc a" });
   print_result({ "mov a -10", "mov b a", "inc a", "dec b", "jnz a -2" });
   print_result({ "mov d 100", "dec d", "mov b d", "jnz b -2", "inc d", "mov a d", "jnz 5 10", "mov c a" });
+
+  // Arithmetic
+  print_result(
+  {
+    "mov a -10",
+    "mov b a",
+    "add b 10",
+    "inc a",
+    "dec b",
+    "jnz a -2",
+    "mul b -2",
+    "inc a",
+    "dec b",
+    "jnz b -2"
+  });
 
   return 0;
 }
