@@ -5,16 +5,16 @@ A personal project via which I aim to learn a bit about assembly by programming 
 * ✔ `MOV x, y` <u>Mov</u>e the contents of register `y` into register `x` (`x = y`)
 * ✔ `INC x` <u>Inc</u>rement register `x` by one (`x++`)
 * ✔ `DEC x` <u>Dec</u>rement register `x` by one (`x--`)
+* ✔ `ADD x, y` <u>Add</u> the contents of register `y` to `x` (`x += y`)
+* ✔ `SUB x, y` <u>Sub</u>tract the contents of register `y` from `x` (`x -= y`)
+* ✔ `MUL x, y` <u>Mul</u>tiply the contents of register `x` and `y`, store result in `x` (`x *= y`)
+* ✔ `DIV x, y` Integer <u>div</u>ide the contents of register `x` by `y`, store result in `x` (`x /= y`)
+
+
 * ✔ `JNZ x, y` <u>J</u>ump `y` instructions if register `x` is <u>N</u>ot <u>Z</u>ero
+* ✔ `;` Comment, ignored by the interpreter
 
 ### Planned Instructions
-* ✘ `ADD x, y` <u>Add</u> the contents of register `y` to `x` (`x += y`)
-* ✘ `SUB x, y` <u>Sub</u>tract the contents of register `y` from `x` (`x -= y`)
-* ✘ `MUL x, y` <u>Mul</u>tiply the contents of register `x` and `y`, store result in `x` (`x *= y`)
-* ✘ `DIV x, y` Integer <u>div</u>ide the contents of register `x` by `y`, store result in `x` (`x /= y`)
-
-
-* ✘ `;` Comment, ignored by the interpreter
 * ✘ `label:` Define a position within the code reachable by the `label` identifier
 * ✘ `call lbl` Procedure <u>call</u> to the subroutine identified by the label `lbl`
 * ✘ `ret` <u>Ret</u>urn to the instruction that called the current subroutine
